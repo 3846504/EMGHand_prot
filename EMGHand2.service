@@ -1,0 +1,10 @@
+[Unit]
+Description=Shutdown Daemon
+
+[Service]
+ExecStart =/usr/bin/python /home/pi/project/prog/main.py
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
